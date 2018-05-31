@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+        <meta name="Description" content=""/>
+        <meta name="author" content=""/>
+        <title>Go Dokter - Dashboard</title>
+        <meta name="robots" content=""/>
+        <meta name="googlebot" content=""/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/ico" href="#"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body ng-app="">
+
+        <div id="layout">
+            <div ng-include="'backend-header.html'"></div>
+
+
+            <section class="container">
+                <div class="main-container">
+                    <div class="row">
+                        <div class="listed">
+                            <div class="row">
+                                <div class="filters">
+                                <h4>History Transaksi</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="highest to lowest"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="lowest to highest"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+                                        <li>
+                                            <select>
+                                                <option selected>Month</option>
+                                                <option value='1'>Janaury</option>
+                                                <option value='2'>February</option>
+                                                <option value='3'>March</option>
+                                                <option value='4'>April</option>
+                                                <option value='5'>May</option>
+                                                <option value='6'>June</option>
+                                                <option value='7'>July</option>
+                                                <option value='8'>August</option>
+                                                <option value='9'>September</option>
+                                                <option value='10'>October</option>
+                                                <option value='11'>November</option>
+                                                <option value='12'>December</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--Monthly list-->
+                            <div class="row">
+                                <div class="box-listed">
+                                    <div class="box-title-list">
+                                        <h5>Mei 2018</h5>
+                                    </div>
+                                    <ul class="list-unstyled box-item-list">
+                                        <li>
+                                            You don't have any results for this month yet.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-listed">
+                                    <div class="box-title-list">
+                                        <h5>April 2018</h5>
+                                    </div>
+                                    <ul class="list-unstyled box-item-list">
+                                        <li>
+                                            <i class="fa fa-file-text-o type-icon"></i>
+                                            <span>20 April. 2018</span>
+                                            <span class="type-test">Blood Sugar Test</span>
+                                            <span class="download-link"><a href="pdf/pdf.pdf" download class="hvr-icon-down">Download</a></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-file-text-o type-icon"></i>
+                                            <span>20 April. 2016</span>
+                                            <span class="type-test">Tests for Sexually Transmitted Infections</span>
+                                            <span class="download-link"><a href="pdf/pdf.pdf" download class="hvr-icon-down">Download</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box-listed">
+                                    <div class="box-title-list">
+                                        <h5>Oktober 2017</h5>
+                                    </div>
+                                    <ul class="list-unstyled box-item-list">
+                                        <li>
+                                            <i class="fa fa-file-text-o type-icon"></i>
+                                            <span>10 Oktober. 2017</span>
+                                            <span class="type-test">Eye Test</span>
+                                            <span class="download-link"><a href="pdf/pdf.pdf" download class="hvr-icon-down">Download</a></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-file-text-o type-icon"></i>
+                                            <span>23 Oktober. 2017</span>
+                                            <span class="type-test">Gastrointestinal (GI) </span>
+                                            <span class="download-link"><a href="pdf/pdf.pdf" download class="hvr-icon-down">Download</a></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-file-text-o type-icon"></i>
+                                            <span>23 OcOktobert. 2017</span>
+                                            <span class="type-test">Electrocardiogram (ECG) </span>
+                                            <span class="download-link"><a href="pdf/pdf.pdf" download class="hvr-icon-down">Download</a></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-file-text-o type-icon"></i>
+                                            <span>23 Oktober. 2017</span>
+                                            <span class="type-test">Blood tests </span>
+                                            <span class="download-link"><a href="pdf/pdf.pdf" download class="hvr-icon-down">Download</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row" style="text-align: center">
+                                <div class="load-more">
+                                    <a class="btn btn-green btn-small" href="#"> Tampilkan Lebih banyak</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Aside-->
+                        <aside>
+                            <div class="elements-aside solid-color">
+                                <ul>
+                                    <li class="color-1">
+                                        <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                        <h4>Emergency Case</h4>
+                                        <p>If you need a doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.</p>
+                                    </li>
+                                    <li class="color-2">
+                                        <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                                        <h4>Working Time</h4>
+                                        <p>Monday to Friday <span> 05:00am to 10:00pm</span></p>
+                                        <p>Weekends <span> 09:00am to 12:00pm</span></p>
+                                    </li>
+                                    <li class="color-3">
+                                        <i class="fa fa-id-badge" aria-hidden="true"></i>
+                                        <h4>Medical Services</h4>
+                                        <p>If you need a doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <!--Aside-->
+                    </div>
+                </div>
+            </section>
+
+            <div ng-include="'backend-footer.html'"></div>
+
+        </div>
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
+        <!-- Main Functions-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

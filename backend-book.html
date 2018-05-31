@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+        <meta name="Description" content=""/>
+        <meta name="author" content=""/>
+        <title>Go Dokter - Dashboard</title>
+        <meta name="robots" content=""/>
+        <meta name="googlebot" content=""/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/ico" href="#"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body ng-app="">
+
+        <div id="layout">
+            <div ng-include="'backend-header.html'"></div>
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <h2>Book Appointment</h2>
+                            <em>Follow these instructions: Select your prefer specialist after select the clinical department then, the calendar is going to be enable to select your appointment <br> (the avatar doctor is loading while you select the specialist).</em>
+                            <hr>
+                        </div>
+
+                        <div class="search-appointment">
+                            <form class="make-app">
+                                <!--Departments-->
+                                <div class="icon-data">
+                                        <i class="fa fa-hospital-o"></i>*
+                                    </div>
+                                    <select>
+                                        <option value="-1" selected>Jenis Spesialis</option>
+                                        <option value="1">General</option>
+                                        <option value="2">Cardic Clinic</option>
+                                        <option value="3">General Surgery</option>
+                                        <option value="4">Psychology</option>
+                                        <option value="5">Pediatrics</option>
+                                    </select>
+                                    <!--Departments-->
+
+                                    <!--Departments-->
+                                    <div class="icon-data">
+                                            <i class="fa fa-hospital-o"></i>*
+                                        </div>
+                                        <select>
+                                            <option value="-1" selected>Rumah Sakit</option>
+                                            <option value="1">RS. CIPTO M</option>
+                                            <option value="2">RS. MATA AINI</option>
+                                            <option value="3">RS. GATOT SUBROTO</option>
+                                            <option value="4">RS. KEPRESIDENAN</option>
+                                            <option value="5">RS. DAERAH CIAWI</option>
+                                        </select>
+                                        <!--Departments-->
+        
+                                    <!--name-->
+                                    <div class="icon-data">
+                                        <i class="fa fa-user-md"></i>*
+                                    </div>
+                                    <select>
+                                        <option value="-1" selected>Doctors</option>
+                                        <option value="1">DR. SMITH</option>
+                                        <option value="2">DR. JURADO</option>
+                                        <option value="3">DR. RENDON</option>
+                                        <option value="4">DR. MARTINEZ</option>
+                                        <option value="5">DR. OUSHY</option>
+                                    </select>
+                                    <!--name-->
+
+                                    <span class="btn btn-green btn-small btn-search-appointment"><i class="fa fa-search"></i> Cari Jadwal</span><!--Change to Button Attribute-->
+                             </form>
+                        </div>
+
+                        <div class="preview-appointment">
+                            <div class="preview-doctor">
+                                <img src="img/dr.Zainah Fitria.png" alt="doctor preview">
+                            </div>
+                            <ul>
+                                <li><h5>dr.Zainah Fitria</h5></li>
+                                <li>Specialization: <span>General Practitioners </span></li>
+                                <li>Price Appointment: <span class="price"> GRATIS</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                    </div>
+
+                    <div class="row">
+                        <div class="book-calendar-grid">
+                            <div class="book-calendar">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="7">
+                                                <h2>Juni 2018
+                                                <a href="#" class="arrows"><i class="fa fa-angle-double-right"></i></a>
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                        <tr class="days">
+                                            <th>SUN</th>
+                                            <th>MON</th>
+                                            <th>TUE</th>
+                                            <th>WED</th>
+                                            <th>THU</th>
+                                            <th>FRI</th>
+                                            <th>SAT</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="passdate">
+                                            <td class="nextmonth">30</td>
+                                            <td title="No Available">1</td>
+                                            <td title="No Available">2</td>
+                                            <td title="No Available">3</td>
+                                            <td title="No Available">4</td>
+                                            <td title="No Available">5</td>
+                                            <td title="No Available">6</td>
+                                        </tr>
+                                        <tr class="passdate">
+                                            <td title="No Available">7</td>
+                                            <td title="No Available">8</td>
+                                            <td title="No Available">9</td>
+                                            <td title="No Available">10</td>
+                                            <td title="No Available">11</td>
+                                            <td title="No Available">12</td>
+                                            <td class="passdate">13</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="passdate">14</td>
+                                            <td class="passdate">15</td>
+                                            <td class="passdate">16</td>
+                                            <td>17</td>
+                                            <td><span class="date-numer" id="2" data-toggle="tooltip" data-placement="top" title="¡Available!">18</span></td>
+                                            <td><span class="date-numer" id="3" data-toggle="tooltip" data-placement="top" title="¡Available!">19</span></td>
+                                            <td><span class="date-numer" id="4" data-toggle="tooltip" data-placement="top" title="¡Available!">20</span></td>
+                                        </tr>
+                                        <tr class="list-available" id="list-book-2">
+                                            <td colspan="7" class="booked-list">
+                                                <span class="close"><i class="fa fa-times-circle"></i></span>
+                                                <h4>Available Appointments on February 18, 2017</h4>
+                                                <div class="row">
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>8:00 - 8:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>8:30 - 8:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>10:00 - 10:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>10:30 - 10:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>11:30 - 11:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>13:00 - 13:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>14:00 - 14:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>14:30 - 14:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>15:30 - 15:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>16:00 - 16:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>17:00 - 17:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>17:30 - 17:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <span data-toggle="modal" data-target=".modal" class="btn btn-xsmall">book appointment</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="list-available" id="list-book-3">
+                                            <td colspan="7" class="booked-list">
+                                                <span class="close"><i class="fa fa-times-circle"></i></span>
+                                                <h4>Available Appointments on February 19, 2017</h4>
+                                                <div class="row">
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>8:00 - 8:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>8:30 - 8:50</span>
+                                                          </label>
+                                                        </div>
+
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>9:30 - 9:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>10:00 - 10:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>10:30 - 10:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>11:00 - 11:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>11:30 - 11:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>13:00 - 13:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>13:30 - 13:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>14:00 - 14:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>14:30 - 14:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>15:00 - 15:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>15:30 - 15:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>16:00 - 16:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>16:30 - 16:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>17:00 - 17:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>17:30 - 17:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>18:00 - 18:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <a href="#" class="btn btn-xsmall">book appointment</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="list-available" id="list-book-4">
+                                            <td colspan="7" class="booked-list">
+                                                <span class="close"><i class="fa fa-times-circle"></i></span>
+                                                <h4>Available Appointments on February 19, 2017</h4>
+                                                <div class="row">
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>8:00 - 8:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>8:30 - 8:50</span>
+                                                          </label>
+                                                        </div>
+
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>9:30 - 9:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>10:00 - 10:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>10:30 - 10:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>11:00 - 11:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>11:30 - 11:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>13:00 - 13:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>13:30 - 13:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>14:00 - 14:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>14:30 - 14:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>15:00 - 15:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>15:30 - 15:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>16:00 - 16:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>16:30 - 16:50</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <!--List Book-->
+                                                    <div class="time-book">
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>17:00 - 17:20</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>17:30 - 17:50</span>
+                                                          </label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                          <label>
+                                                            <input type="radio" name="optionsRadios"  value="option2">
+                                                            <span>18:00 - 18:20</span>
+                                                          </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--List Book-->
+
+                                                    <a href="#" class="btn btn-xsmall">book appointment</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td class="nextmonth">1</td>
+                                            <td class="nextmonth">2</td>
+                                            <td class="nextmonth">3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-include="'backend-footer.html'"></div>
+
+
+            <!-- Modal -->
+            <div class="modal fade book-an-appointment" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Book an Appointment</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Please review and confirm that you would like to request the following appointment:</p>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <i class="fa fa-calendar datetime"></i>
+                                    <h4>Juni 18, 2018</h4>
+                                </div>
+                                <div class="col-lg-6">
+                                    <i class="fa fa-clock-o datetime"></i>
+                                    <h4>7:00 - 7:20</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <h4>dr.Zainah Fitria</h4>
+                                    <h4><span class="price"> GRATIS</span></h4>
+                                </div>
+                            </div>
+                            <p>Please confirm your password account to get your appointment medical:</p>
+                            <input type="password" placeholder="Password">
+
+                            <a class="btn btn-green btn-xsmall" href="backend-auth.html" onclick="alert('Terimakasih pendaftaran anda sedang menunggu persetujuan dokter')">confirm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+        </div>
+
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
+        <!-- Main Functions -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

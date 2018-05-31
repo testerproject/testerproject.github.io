@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+        <meta name="Description" content=""/>
+        <meta name="author" content=""/>
+        <title>Go Dokter - Dashboard</title>
+        <meta name="robots" content=""/>
+        <meta name="googlebot" content=""/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/ico" href="#"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body ng-app="">
+
+        <div id="layout">
+            <div ng-include="'backend-header.html'"></div>
+
+            <section class="container">
+                <div class="main-container">
+                    <div class="row">
+                        <div class="listed">
+                            <div class="row">
+                                <div class="filters">
+                                <h4>Cari Dokter</h4>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <input type="text" placeholder="Nama Dokter" style="margin: 0; padding: 5px 10px"/>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Rumah Sakit</option>
+                                                <option>General</option>
+                                                <option>Specialist</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option>Jenis Spesialis</option>
+                                                <option>General</option>
+                                                <option>Specialist</option>
+                                            </select>
+                                        </li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="highest to lowest"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="lowest to highest"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!--Item-->
+                                <div class="col-lg-12">
+                                    <div class="item-meeting">
+                                        <!--Item-->
+                                        <div class="avatar-doctor">
+                                            <div class="avatar-image">
+                                                <img src="img/dr.Zainah Fitria.png" alt="doctor">
+                                            </div>
+                                        </div>
+
+                                        <div class="data-meeting">
+                                            <ul class="list-unstyled info-meet">
+                                                <li><p>ID Dokter <span>9876005-00</span></p></li>
+                                                <li><p>Nama Lengkap : <span>dr.Zainah Fitria</span></p></li>
+                                                <li><p>Spesialis: <span>General Practitioners                                        </span></p></li>
+                                                <li>
+                                                    <div class="alert alert-info" role="alert">
+                                                     Beliau adalah seorang dokter umum yang bekerja di RS Mata Aini. Ia memperoleh gelar dokter dari fakultas kedokteran universitas Yarsi pada tahun 2012.                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <ul class="list-unstyled btns">
+                                                <li>
+                                                    <a class="btn btn-block" href="#" target="_blank">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i> Atur Jadwal
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                            </div>
+
+                            <div class="row">
+                                <!--Item-->
+                                <div class="col-lg-12">
+                                        <div class="item-meeting">
+                                            <!--Item-->
+                                            <div class="avatar-doctor">
+                                                <div class="avatar-image">
+                                                    <img src="img/Dr. Suci Istiqa Mustafa, SpM .png" alt="doctor">
+                                                </div>
+                                            </div>
+    
+                                            <div class="data-meeting">
+                                                <ul class="list-unstyled info-meet">
+                                                    <li><p>ID Dokter <span>9546001-00</span></p></li>
+                                                    <li><p>Nama Lengkap : <span>Dr. Suci Istiqa Mustafa, SpM
+                                                        </span></p></li>
+                                                    <li><p>Spesialis: <span>Cataract</span></p></li>
+                                                    <li>
+                                                        <div class="alert alert-info" role="alert">
+                                                         Beliau adalah seorang dokter Cataract yang bekerja di RS Mata Aini. 
+                                                         Ia memperoleh gelar dokter dari Opthalmology Residency, Universitas Indonesia (2010 - 2015)</div>
+                                                    </li>
+                                                </ul>
+    
+                                                <ul class="list-unstyled btns">
+                                                    <li>
+                                                        <a class="btn btn-block" href="#" target="_blank">
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i> Atur Jadwal
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--Item-->
+                            </div>
+
+                            <div class="row">
+                                <div class="load-more" style="text-align: center">
+                                    <a class="btn btn-green btn-small" href="#"> Tampilkan Lebih banyak</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Aside-->
+                        <aside>
+                            <div class="elements-aside gray-color">
+                                <ul>
+                                    <li class="color-1">
+                                        <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                        <h4>Emergency Case</h4>
+                                        <p>If you need a doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.</p>
+                                    </li>
+                                    <li class="color-2">
+                                        <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                                        <h4>Working Time</h4>
+                                        <p>Monday to Friday <span> 05:00am to 10:00pm</span></p>
+                                        <p>Weekends <span> 09:00am to 12:00pm</span></p>
+                                    </li>
+                                    <li class="color-1">
+                                        <i class="fa fa-id-badge" aria-hidden="true"></i>
+                                        <h4>Medical Services</h4>
+                                        <p>If you need a doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.</p>
+                                    </li>
+                                    <li class="color-3">
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                        <h4>Doubts?</h4>
+                                        <p>Office Av. 100 #0987-988, <span>Central Park</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <!--Aside-->
+                    </div>
+                </div>
+            </section>
+
+            <div ng-include="'backend-footer.html'"></div>
+
+
+            <section class="help-box">
+                <div class="body-help">
+                    <span class="close-box"><i class="fa fa-times"></i></span>
+                    <i class="fa fa-question-circle"></i>
+                    <h5>Do you need our Help?</h5>
+                    <p>If you need a help about how get an a book just write us and we are going to grateful to help.</p>
+                    <a href="#" class="chat-link">Contact us Now</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
+        <!-- Main Functions-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

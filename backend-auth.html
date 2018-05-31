@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+        <meta name="Description" content=""/>
+        <meta name="author" content=""/>
+        <title>Go Dokter - Dashboard</title>
+        <meta name="robots" content=""/>
+        <meta name="googlebot" content=""/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/ico" href="#"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body ng-app="">
+
+        <div id="layout">
+            <div ng-include="'backend-header.html'"></div>
+
+            <div class="container">
+                <div class="main-container">
+
+                    <div class="row">
+                        <div class="filters">
+                        <h4>List Appointment</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="backend-book.html"><i class="fa fa-add"></i> Atur Appointment Baru</a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="highest to lowest"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="lowest to highest"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+                                <li>
+                                    <select>
+                                        <option>Status Appointment</option>
+                                        <option>Pending</option>
+                                        <option>Approved</option>
+                                        <option>Rejected</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--Box-->
+                        <div class="box-view-doc">
+                            <div class="view-doc doc-bg-01">
+                                <div class="overlay-links">
+                                    <a href="pdf/pdf.pdf" download data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Archive" class="archive"><i class="fa fa-archive"></i></a>
+
+                                    <div class="view-screen">
+                                        <a href="pdf/pdf.pdf" target="_blank">view document</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="view-doc-info list-unstyled">
+                                <li><h4>dr.Zainah Fitria</h4></li>
+                                <li><p>Date: <span>09 April 2018</span></p></li>
+                                <li><p>Status: <span class="alert alert-success"><i class="fa fa-check"></i> Approved</span></p></li>
+                            </ul>
+                        </div>
+                        <!--Box-->
+
+                        <!--Box-->
+                        <div class="box-view-doc">
+                            <div class="view-doc doc-bg-03">
+                                <div class="overlay-links">
+                                    <a href="pdf/pdf.pdf" download data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Archive" class="archive"><i class="fa fa-archive"></i></a>
+                                    <div class="view-screen">
+                                        <a href="pdf/pdf.pdf" target="_blank">view document</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="view-doc-info list-unstyled">
+                                <li><h4>Dr. Suci Istiqa Mustafa, SpM </h4></li>
+                                <li><p>Date: <span>01 April 2018</span></p></li>
+                                <li><p>Status: <span class="alert alert-success"><i class="fa fa-check"></i> Approved</span></p></li>
+                            </ul>
+                        </div>
+                        <!--Box-->
+
+                        <!--Box-->
+                        <div class="box-view-doc">
+                            <div class="view-doc doc-bg-01">
+                                <div class="overlay-links">
+                                    <a href="pdf/pdf.pdf" download data-toggle="tooltip" data-placement="bottom" title="Download"><i class="fa fa-cloud-download"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Archive" class="archive"><i class="fa fa-archive"></i></a>
+
+                                    <div class="view-screen">
+                                        <a href="pdf/pdf.pdf" target="_blank">view document</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="view-doc-info list-unstyled">
+                                <li><h4>dr.Zainah Fitria</h4></li>
+                                <li><p>Date: <span>10 Oktober 2017</span></p></li>
+                                <li><p>Status: <span class="alert alert-danger"><i class="fa fa-close"></i> Rejected</span></p></li>
+                            </ul>
+                        </div>
+                        <!--Box-->
+
+                        <!--Box-->
+                        <div class="box-view-doc">
+                            <div class="view-doc doc-bg-02">
+                                <div class="overlay-links">
+                                    <a href="#" class="disable"><i class="fa fa-cloud-download"></i></a>
+                                    <a href="#" class="archive disable"><i class="fa fa-archive"></i></a>
+                                    <div class="view-screen">
+                                        <a href="#" class="disable">It's not ready yet</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="view-doc-info list-unstyled">
+                                <li><h4>Dr. Suci Istiqa Mustafa, SpM </h4></li>
+                                <li><p>Date: <span>31 Mei 2017</span></p></li>
+                                <li><p>Status: <span class="alert alert-info"><i class="fa fa-spinner"></i> Pending</span></p></li>
+                            </ul>
+                        </div>
+                        <!--Box-->
+
+
+                        <!--Box-->
+                        <div class="box-view-doc">
+                            <div class="view-doc doc-bg-01">
+                                <div class="overlay-links">
+                                    <a href="#" class="disable"><i class="fa fa-cloud-download"></i></a>
+                                    <a href="#" class="archive disable"><i class="fa fa-archive"></i></a>
+                                    <div class="view-screen">
+                                        <a href="#" class="disable">It's not ready yet</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="view-doc-info list-unstyled">
+                                <li><h4>dr.Zainah Fitria</h4></li>
+                                <li><p>Date: <span>26 Juni 2018</span></p></li>
+                                <li><p>Status: <span class="alert alert-info"><i class="fa fa-spinner"></i> Pending</span></p></li>
+                            </ul>
+                        </div>
+                        <!--Box-->
+
+
+                        <!--Box-->
+                        <div class="box-view-doc">
+                            <div class="view-doc doc-bg-03 not-ready">
+                                <div class="overlay-links">
+                                    <a href="#" class="disable"><i class="fa fa-cloud-download"></i></a>
+                                    <a href="#" class="archive disable"><i class="fa fa-archive"></i></a>
+                                    <div class="view-screen">
+                                        <a href="#" class="disable">It's not ready yet</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="view-doc-info list-unstyled">
+                                <li><h4>Dr. Suci Istiqa Mustafa, SpM </h4></li>
+                                <li><p>Date: <span>29 Juni 2017</span></p></li>
+                                <li><p>Status: <span class="alert alert-info"><i class="fa fa-spinner"></i> Pending</span></p></li>
+                            </ul>
+                        </div>
+                        <!--Box-->
+                    </div>
+
+                    <div class="row">
+                        <div class="load-more" style="text-align: center">
+                            <a class="btn btn-green btn-small" href="#"> Tampilkan Lebih banyak</a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            
+            <div ng-include="'backend-footer.html'"></div>
+
+        </div>
+
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
+        <!-- Main Functions-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

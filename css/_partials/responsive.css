@@ -1,0 +1,497 @@
+@media (max-width: 1313px) {
+  /* line 2, ../../sass/_partials/responsive.scss */
+  .container {
+    width: auto !important;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 7, ../../sass/_partials/responsive.scss */
+  .navbar-header {
+    float: none;
+  }
+
+  /* line 10, ../../sass/_partials/responsive.scss */
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+
+  /* line 13, ../../sass/_partials/responsive.scss */
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* line 16, ../../sass/_partials/responsive.scss */
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 20, ../../sass/_partials/responsive.scss */
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  /* line 24, ../../sass/_partials/responsive.scss */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  /* line 27, ../../sass/_partials/responsive.scss */
+  .navbar-nav {
+    float: none !important;
+    padding-top: 0;
+  }
+
+  /* line 31, ../../sass/_partials/responsive.scss */
+  .navbar-nav > li {
+    float: none;
+  }
+
+  /* line 34, ../../sass/_partials/responsive.scss */
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* line 38, ../../sass/_partials/responsive.scss */
+  .collapse.in {
+    display: block !important;
+  }
+
+  /* line 43, ../../sass/_partials/responsive.scss */
+  nav ul li {
+    padding-bottom: 10px;
+  }
+  /* line 46, ../../sass/_partials/responsive.scss */
+  nav ul li.active::before {
+    display: none !important;
+  }
+
+  /* line 51, ../../sass/_partials/responsive.scss */
+  .visible-mobile {
+    display: inherit !important;
+    margin-bottom: 20px;
+  }
+
+  /* line 55, ../../sass/_partials/responsive.scss */
+  nav ul {
+    padding: 0 !important;
+  }
+
+  /* line 57, ../../sass/_partials/responsive.scss */
+  nav .navbar-brand {
+    display: inline-block !important;
+  }
+
+  /* line 60, ../../sass/_partials/responsive.scss */
+  header.header .logo {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 66, ../../sass/_partials/responsive.scss */
+  aside {
+    margin-top: 30px;
+  }
+  /* line 68, ../../sass/_partials/responsive.scss */
+  aside .elements-aside {
+    padding-left: 0 !important;
+  }
+
+  /* line 72, ../../sass/_partials/responsive.scss */
+  .services-app {
+    margin-bottom: 50px !important;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 77, ../../sass/_partials/responsive.scss */
+  input,
+  select {
+    width: 95% !important;
+  }
+
+  /* line 81, ../../sass/_partials/responsive.scss */
+  .register-form input[type="radio"], .register-form input[type="checkbox"] {
+    width: auto !important;
+  }
+
+  /* line 84, ../../sass/_partials/responsive.scss */
+  .menu .logo a {
+    display: inline-block;
+  }
+
+  /* line 89, ../../sass/_partials/responsive.scss */
+  .account-zone .form-intials input, .account-zone .form-intials select {
+    width: 89% !important;
+  }
+  /* line 92, ../../sass/_partials/responsive.scss */
+  .account-zone .form-intials.accordion {
+    margin-top: 30px;
+  }
+  /* line 93, ../../sass/_partials/responsive.scss */
+  .account-zone .form-intials:last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 100, ../../sass/_partials/responsive.scss */
+  .blog.preview .item-blog:nth-child(3) {
+    display: none;
+  }
+
+  /* line 103, ../../sass/_partials/responsive.scss */
+  .video-how-to {
+    margin-top: 50px;
+  }
+
+  /* line 106, ../../sass/_partials/responsive.scss */
+  .emergency-number, .emergency-number.email {
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+
+  /* line 112, ../../sass/_partials/responsive.scss */
+  nav ul li {
+    margin-right: 25px !important;
+  }
+  /* line 116, ../../sass/_partials/responsive.scss */
+  nav .flat-mega-menu {
+    display: none !important;
+  }
+
+  /* line 118, ../../sass/_partials/responsive.scss */
+  .search-appointment {
+    margin-bottom: 50px;
+  }
+  /* line 120, ../../sass/_partials/responsive.scss */
+  .search-appointment select {
+    width: 95%;
+    background-position: 98% 45%;
+  }
+
+  /* line 128, ../../sass/_partials/responsive.scss */
+  .login .login-form .form-login input, .login .login-form .form-login select {
+    width: 90% !important;
+  }
+
+  /* line 135, ../../sass/_partials/responsive.scss */
+  .blog aside {
+    padding-left: 15px !important;
+  }
+}
+@media (max-width: 901px) {
+  /* line 145, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .avatar-doctor .avatar-image {
+    width: 220px !important;
+  }
+  /* line 151, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .data-meeting ul li {
+    margin-right: 5px !important;
+    margin-bottom: 10px;
+  }
+  /* line 160, ../../sass/_partials/responsive.scss */
+  .main-container aside.vertical {
+    margin-top: 0 !important;
+  }
+  /* line 164, ../../sass/_partials/responsive.scss */
+  .main-container aside.vertical .elements-aside ul li {
+    width: 100% !important;
+  }
+
+  /* line 176, ../../sass/_partials/responsive.scss */
+  header.header .menu .menu-nav ul li {
+    margin: 0 !important;
+    margin-left: 18px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* line 185, ../../sass/_partials/responsive.scss */
+  .icon-data {
+    width: 15px !important;
+  }
+
+  /* line 191, ../../sass/_partials/responsive.scss */
+  .login .login-form .form-login input, .login .login-form .form-login select {
+    width: 95% !important;
+  }
+
+  /* line 198, ../../sass/_partials/responsive.scss */
+  header .tools-top {
+    text-align: left !important;
+    margin-top: 30px;
+  }
+  /* line 201, ../../sass/_partials/responsive.scss */
+  header .tools-top .avatar-profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* line 207, ../../sass/_partials/responsive.scss */
+  header .tools-help {
+    float: none !important;
+    display: inline-block;
+  }
+}
+@media (max-width: 769px) {
+  /* line 218, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .avatar-doctor .avatar-image {
+    width: auto !important;
+    margin-left: 0 !important;
+    padding: 30px 0 30px 15px !important;
+  }
+  /* line 224, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .date {
+    position: relative !important;
+    width: 100% !important;
+    padding: 20px 40px !important;
+  }
+  /* line 228, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .date .date-calendar {
+    position: relative !important;
+    bottom: auto !important;
+  }
+
+  /* line 236, ../../sass/_partials/responsive.scss */
+  .make-book .book-form {
+    max-width: 100% !important;
+  }
+
+  /* line 239, ../../sass/_partials/responsive.scss */
+  .services {
+    margin: 50px 15px 0 15px !important;
+    padding: 0 !important;
+  }
+  /* line 243, ../../sass/_partials/responsive.scss */
+  .services ul li {
+    width: 100% !important;
+    float: none !important;
+    min-height: auto !important;
+    margin: 15px 0 !important;
+  }
+
+  /* line 251, ../../sass/_partials/responsive.scss */
+  .services-app {
+    margin: 0 0 50px 0 !important;
+  }
+
+  /* line 254, ../../sass/_partials/responsive.scss */
+  header.header {
+    min-height: 550px !important;
+  }
+  /* line 257, ../../sass/_partials/responsive.scss */
+  header.header .hero-msj p {
+    line-height: 26px !important;
+  }
+  /* line 258, ../../sass/_partials/responsive.scss */
+  header.header .hero-msj h1 {
+    font-size: 27px !important;
+    line-height: 37px !important;
+    padding-top: 70px !important;
+  }
+  /* line 264, ../../sass/_partials/responsive.scss */
+  header.header .navbar-header {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+@media (max-width: 701px) {
+  /* line 274, ../../sass/_partials/responsive.scss */
+  .box-listed .box-item-list .type-icon {
+    float: none !important;
+    margin-bottom: 10px;
+    margin-right: 10px !important;
+  }
+
+  /* line 283, ../../sass/_partials/responsive.scss */
+  .account-zone .form-intials input, .account-zone .form-intials select {
+    width: 94% !important;
+  }
+}
+@media (max-width: 652px) {
+  /* line 290, ../../sass/_partials/responsive.scss */
+  .make-book {
+    min-height: 680px !important;
+  }
+
+  /* line 295, ../../sass/_partials/responsive.scss */
+  .box-listed .box-item-list .type-test {
+    margin-left: 0 !important;
+    display: block;
+  }
+  /* line 299, ../../sass/_partials/responsive.scss */
+  .box-listed .box-item-list .download-link {
+    float: none !important;
+    display: block;
+  }
+
+  /* line 305, ../../sass/_partials/responsive.scss */
+  .navbar-nav {
+    margin: 0 15px !important;
+  }
+
+  /* line 310, ../../sass/_partials/responsive.scss */
+  .list-blog .gallery-list-post li {
+    width: 48% !important;
+  }
+
+  /* line 315, ../../sass/_partials/responsive.scss */
+  .icon-data {
+    width: 26px !important;
+  }
+
+  /* line 318, ../../sass/_partials/responsive.scss */
+  input, select {
+    width: 92% !important;
+  }
+
+  /* line 321, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .data-meeting {
+    padding: 0 30px 30px 30px !important;
+  }
+
+  /* line 322, ../../sass/_partials/responsive.scss */
+  .register-form select, .register-form input {
+    width: 86% !important;
+  }
+
+  /* line 325, ../../sass/_partials/responsive.scss */
+  .login .login-form .form-login input, .login .login-form .form-login select {
+    width: 87% !important;
+  }
+
+  /* line 329, ../../sass/_partials/responsive.scss */
+  header.header .navbar-collapse {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* line 332, ../../sass/_partials/responsive.scss */
+  header.header .navbar-collapse ul {
+    padding: 0;
+    text-align: right;
+    margin-right: 0;
+  }
+
+  /* line 340, ../../sass/_partials/responsive.scss */
+  .preview-appointment .preview-doctor {
+    float: none !important;
+  }
+  /* line 343, ../../sass/_partials/responsive.scss */
+  .preview-appointment ul {
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+@media (max-width: 570px) {
+  /* line 353, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .avatar-doctor {
+    padding: 0 15px 0 0 !important;
+  }
+  /* line 354, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .data-meeting {
+    padding: 0 20px 10px 20px !important;
+  }
+
+  /* line 361, ../../sass/_partials/responsive.scss */
+  .make-book .book-form {
+    padding: 40px !important;
+  }
+
+  /* line 367, ../../sass/_partials/responsive.scss */
+  .login .data-form input, .login .data-form select {
+    width: 87% !important;
+  }
+
+  /* line 374, ../../sass/_partials/responsive.scss */
+  .make-book .book-form select, .make-book .book-form input {
+    width: 90% !important;
+  }
+
+  /* line 381, ../../sass/_partials/responsive.scss */
+  .filters ul li:first-child {
+    margin: 20px 10px 20px 0 !important;
+  }
+
+  /* line 384, ../../sass/_partials/responsive.scss */
+  .help-box {
+    width: auto !important;
+  }
+
+  /* line 385, ../../sass/_partials/responsive.scss */
+  footer .sponsors span {
+    padding: 10px;
+  }
+
+  /* line 388, ../../sass/_partials/responsive.scss */
+  .book-calendar {
+    overflow-x: auto;
+    min-height: 0.01%;
+  }
+}
+@media (max-width: 415px) {
+  /* line 396, ../../sass/_partials/responsive.scss */
+  .login .login-form .login-data {
+    margin: 70px 0 50px 0 !important;
+    padding: 45px !important;
+  }
+  /* line 400, ../../sass/_partials/responsive.scss */
+  .login .login-form .login-data .form-login input, .login .login-form .login-data .form-login select {
+    width: 100% !important;
+  }
+
+  /* line 410, ../../sass/_partials/responsive.scss */
+  .main-container .listed .filters ul, .main-container .listed .filters h4 {
+    float: none !important;
+  }
+  /* line 416, ../../sass/_partials/responsive.scss */
+  .main-container .listed .item-meeting .data-meeting span {
+    float: none !important;
+    display: block;
+  }
+
+  /* line 424, ../../sass/_partials/responsive.scss */
+  select, input,
+  .register-form select, .register-form input,
+  .login .login-form .form-login input, .login .login-form .form-login select,
+  .account-zone .form-intials input, .account-zone .form-intials select {
+    width: 100% !important;
+    margin: 0 0 15px 0 !important;
+  }
+
+  /* line 431, ../../sass/_partials/responsive.scss */
+  .single-post .leave-comment .comment-post input {
+    margin: 10px 0 20px 0px;
+  }
+
+  /* line 434, ../../sass/_partials/responsive.scss */
+  .icon-data {
+    float: none !important;
+  }
+
+  /* line 439, ../../sass/_partials/responsive.scss */
+  .account-zone .form-intials input, .account-zone .form-intials select {
+    width: 89% !important;
+  }
+
+  /* line 444, ../../sass/_partials/responsive.scss */
+  .login .data-form {
+    margin: 70px 0 50px 0 !important;
+    padding: 40px !important;
+  }
+
+  /* line 448, ../../sass/_partials/responsive.scss */
+  .main-container {
+    padding: 20px 30px 40px 30px !important;
+  }
+}
+@media (max-width: 375px) {
+  /* line 456, ../../sass/_partials/responsive.scss */
+  .login .login-form .login-data i {
+    display: none !important;
+  }
+  /* line 458, ../../sass/_partials/responsive.scss */
+  .login .login-form .login-data .form-login input, .login .login-form .login-data .form-login select {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}

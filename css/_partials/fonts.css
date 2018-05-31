@@ -1,0 +1,41 @@
+/*
+Available font weights are:
+
+LATO     :  REGULAR 400
+         :  BOLD 700
+*/
+/* line 19, ../../sass/_partials/fonts.scss */
+a {
+  font-weight: 400;
+}
+
+/* Titles Weights ----------------------------*/
+/* line 22, ../../sass/_partials/fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 26, ../../sass/_partials/fonts.scss */
+h1 {
+  font-size: 38px;
+  line-height: 48px;
+}
+
+/* line 30, ../../sass/_partials/fonts.scss */
+h2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+/* line 34, ../../sass/_partials/fonts.scss */
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* line 38, ../../sass/_partials/fonts.scss */
+h4 {
+  font-size: 15px;
+  line-height: 26px;
+}

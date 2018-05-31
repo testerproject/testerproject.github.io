@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+        <meta name="Description" content=""/>
+        <meta name="author" content=""/>
+        <title>Go Dokter - Dashboard</title>
+        <meta name="robots" content=""/>
+        <meta name="googlebot" content=""/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/ico" href=""/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body ng-app="">
+
+        <div id="layout">
+            <div ng-include="'backend-header.html'"></div>
+
+            <div class="container">
+                <div class="main-container">
+                    <!--Form-->
+                    <div class="register-form edit-account">
+
+                        <div class="form-login">
+                            <form>
+                                <!--Personal Information-->
+                                <div class="row">
+
+                                    <h3>Personal Information</h3>
+                                    <hr>
+                                    <div class="datapos">
+
+                                        <!--select a document-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-address-card"></i>
+                                        </div>
+                                        <select disabled class="disable">
+                                            <option selected>Id Number</option>
+                                            <option>Select a Document</option>
+                                        </select>
+                                        <!--select a document-->
+
+                                        <!--name-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" placeholder="Johna">
+                                        <!--name-->
+
+                                        <!--phone-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <input type="number" placeholder="090-192763">
+                                        <!--phone-->
+
+                                        <!--gender-->
+                                        <label>
+                                            <input type="radio" checked value="female"> <span>Female</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" value="male"> Male
+                                        </label>
+                                        <!--gender-->
+                                    </div>
+
+                                    <div class="datapos">
+                                        <!--number document-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-user-circle"></i>
+                                        </div>
+                                        <input type="number" disabled="disabled" class="disable" placeholder="09876543210">
+                                        <!--number document-->
+
+                                        <!--Last name-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" placeholder="Depp">
+                                        <!--Last name-->
+
+                                        <!--Alternative phone-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <input type="number" placeholder="090-192763">
+                                        <!--Alternative phone-->
+
+                                        <!--Avatar Profile-->
+                                        <div class="avatar-profile">
+                                            <label>Image Profile</label>
+                                            <input type="file" accept="image/*">
+                                        </div>
+                                        <!--Avatar Profile-->
+                                    </div>
+
+                                </div>
+                                <!--Personal Information-->
+
+                                <!--Data Information-->
+                                <div class="row">
+                                    <h3>Data Information</h3>
+                                    <div class="datapos">
+
+                                        <!--Last name-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" placeholder="JohnaDeepe">
+                                        <!--Last name-->
+
+                                        <!--number document-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-user-circle"></i>
+                                        </div>
+                                        <input type="password" placeholder="Confirm Password">
+                                        <!--number document-->
+                                    </div>
+                                    <div class="datapos">
+                                        <!--Alternative phone-->
+                                        <div class="icon-data">
+                                            <i class="fa fa-user-circle"></i>
+                                        </div>
+                                        <input type="password" placeholder="Password">
+                                        <!--Alternative phone-->
+                                    </div>
+                                </div>
+                                <!--Data Information-->
+                                <button class="btn btn-default">save data</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Form-->
+                </div>
+            </div>
+
+            <div ng-include="'backend-footer.html'"></div>
+
+
+        </div>
+
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
+        <!-- Main Functions-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

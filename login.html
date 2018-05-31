@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1,  maximum-scale=1">
+        <meta name="Description" content=""/>
+        <meta name="author" content=""/>
+        <title>Go Dokter - Login</title>
+        <meta name="robots" content=""/>
+        <meta name="googlebot" content=""/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <link href="css/styles.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/ico" href=""/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    </head>
+    
+    <body class="panel-access" ng-app="">
+
+        <div id="layout">
+             <!--Login-->
+                <div class="login">
+                    <div class="container">
+                        <div class="login-form">
+                            <div class="data-form">
+                                <!--Logo-->
+                                <a href="index.html" class="logo"><img src="img/logo-simple.png" alt="logo" class="img-responsive"></a>
+                                <!--Logo-->
+
+                                <!--Form-->
+                                <form class="form-login">
+
+                                    <div class="icon-data">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                    <input type="number" placeholder="Email">
+
+                                    <div class="icon-data">
+                                        <i class="fa fa-key"></i>
+                                    </div>
+                                    <input type="password" placeholder="Password">
+
+                                    <a href="backend-index.html" class="btn btn-default" role="button">Login - Dashboard</a>
+                                    <!--<button class="btn btn-default" type="submit">Login</button>-->
+                                </form>
+                                <!--Form-->
+
+                                <a href="index.html#register" class="btn btn-red register" role="button">Belum punya Akun ? Daftar sekarang</a>
+                                <span class="help">
+                                    <a href="forgot-pass.html">¿Forgot Password?</a>
+                                    <a href="help.html" class="help-link">¿Help?</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-include="'main-footer.html'"></div>
+
+             <!--Login-->
+        </div>
+
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-sprockets.js"></script>
+    </body>
+</html>

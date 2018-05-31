@@ -1,0 +1,65 @@
+button, .btn,
+input[type="submit"]{
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    border: none;
+    line-height: 26px;
+    color: #fff !important;
+    background-color: $base-color;
+    width: 100%;
+    font-family: $font-family-primary;
+    letter-spacing: 1.5px;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    width: auto;
+    @extend .hvr-shadow;
+    @media (max-width:$screen-xs-max){
+        font-size: 13px;
+    }
+    &:hover{
+        text-decoration: none;
+        background-color: $base-color;
+        color: #fff;
+        -webkit-transition: 0.3s all ease;
+        -moz-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        -ms-transition: 0.3s all ease;
+        transition: 0.3s all ease;
+    }
+    &.btn-red{
+        background-color: #ff454b !important;
+	}
+    &.btn-green{
+        background-color: #5cb85c !important;
+    }
+    &.btn-small{
+        padding: 7px 20px;
+        font-size: 13px;
+    }
+    &.btn-xsmall{
+        font-size: 11px;
+        padding: 3px 21px;
+    }
+    &.disable{
+        opacity: 0.65 !important;
+    }
+}
+
+.btn-default{
+    &:active{
+        background-color: $base-color;
+        opacity: 0.9;
+    }
+}
+.btn{
+    &:active{
+        opacity: 0.9 !important;
+    }
+}
